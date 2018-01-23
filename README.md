@@ -1,3 +1,5 @@
 # draw_panel
 
-Java JPanel to do smiple drawing with a mouse.
+Smiple drawing with a mouse on JPanel.
+
+Functionalities: clear board, change color 
