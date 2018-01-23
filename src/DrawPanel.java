@@ -88,11 +88,10 @@ public class DrawPanel extends JPanel implements ActionListener, MouseListener,
   public void setColor(String s) {
     Color newC;
     try {
-      Field field = Color.class.getField(s);
-      newC = (Color)field.get(null);
+      newC = (Color) Color.class.getField(s.toLowerCase()).get(null);
     } catch (Exception e) {
       newC = null; // Not defined
     }
-    this.c = newC;
+    this.c = new Color(newC.getRGB());
   }
 }

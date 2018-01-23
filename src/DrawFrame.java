@@ -9,10 +9,9 @@ public class DrawFrame extends JFrame implements ActionListener,IDraw {
 
   private JButton restart;
   private JButton choose;
-  private JList colors;
+  private JTextField colors;
   private DrawPanel panel;
   private JPanel buttonpanel;
-  private Color current;
 
   protected DrawFrame() {
 
@@ -30,38 +29,40 @@ public class DrawFrame extends JFrame implements ActionListener,IDraw {
   }
 
   private void setButtonPanel() {
-
+    //make a panel
     buttonpanel = new JPanel();
     buttonpanel.setBorder(BorderFactory.createTitledBorder("Tools"));
-    buttonpanel.setLayout(new BoxLayout(buttonpanel,BoxLayout.PAGE_AXIS));
-    buttonpanel.add(Box.createRigidArea(new Dimension(5,5)));
-    this.add(buttonpanel, BorderLayout.WEST);
+    //set layout
+    buttonpanel.setLayout(new GridBagLayout());
+    GridBagConstraints left = new GridBagConstraints();
+    left.anchor = GridBagConstraints.EAST;
+    GridBagConstraints right = new GridBagConstraints();
+    right.weightx = 2.0;
+    right.fill = GridBagConstraints.HORIZONTAL;
+    right.gridwidth = GridBagConstraints.REMAINDER;
+    //add button panel to the frame
+    this.add(buttonpanel, BorderLayout.NORTH);
 
+    //button to erase the board
     restart = new JButton("Erase");
     restart.addActionListener((ActionEvent e) -> {
       panel.restart();
     });
     buttonpanel.add(restart);
-    restart.setAlignmentX(Component.CENTER_ALIGNMENT);
-
+    //restart.setAlignmentX(Component.CENTER_ALIGNMENT);
+    //button to chose color of the drawing
     choose = new JButton("Choose Color:");
     choose.addActionListener((ActionEvent e) -> {
-              panel.setColor((String)colors.getSelectedValue());
+              panel.setColor(colors.getText());
+              colors.setText("");
             }
     );
-    buttonpanel.add(choose);
-    choose.setAlignmentX(Component.CENTER_ALIGNMENT);
+    buttonpanel.add(choose, left);
+    //choose.setAlignmentX(Component.CENTER_ALIGNMENT);
 
+    colors = new JTextField(5);
+    buttonpanel.add(colors, right);
 
-    String[] c = {"Yellow", "Blue", "Black", "Gray", "Orange", "Purple"};
-    colors = new JList(c);
-    colors.setFixedCellWidth(colors.getFixedCellWidth() + 50);
-
-    JScrollPane listScroller = new JScrollPane(colors);
-    listScroller.setPreferredSize(new Dimension(80, 80));
-    colors.setLayoutOrientation(JList.VERTICAL);
-    buttonpanel.add(colors);
-    colors.setAlignmentX(Component.CENTER_ALIGNMENT);
 
   }
 
