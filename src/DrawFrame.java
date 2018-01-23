@@ -19,15 +19,17 @@ public class DrawFrame extends JFrame implements ActionListener,IDraw {
 
     this.setLayout(new BorderLayout());
     this.setTitle("Draw Panel");
-    this.setSize(700, 700);
+    this.setSize(600, 600);
 
     panel = new DrawPanel();
     this.add(panel);
     setButtonPanel();
+    JScrollPane scrolling = new JScrollPane(panel);
+    this.setPreferredSize(new Dimension(10, 40));
+    this.add(scrolling, BorderLayout.CENTER);
 
     this.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 
-    pack();
   }
 
   /**

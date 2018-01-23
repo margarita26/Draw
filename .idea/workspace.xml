@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f6a26517-7487-40ee-a1f9-23a359dc13c9" name="Default" comment="Add jpanels">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/src/DrawFrame.java" afterPath="$PROJECT_DIR$/src/DrawFrame.java" />
       <change beforePath="$PROJECT_DIR$/src/DrawPanel.java" afterPath="$PROJECT_DIR$/src/DrawPanel.java" />
-      <change beforePath="$PROJECT_DIR$/src/Shapes/Shape.java" afterPath="$PROJECT_DIR$/src/Shapes/Shape.java" />
       <change beforePath="$APPLICATION_CONFIG_DIR$/options/statistics.main_menu.xml" afterPath="$APPLICATION_CONFIG_DIR$/options/statistics.main_menu.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -18,7 +16,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Draw.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Draw.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Draw.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="150">
@@ -31,12 +29,12 @@
       <file leaf-file-name="DrawFrame.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/DrawFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="248">
-              <caret line="25" column="21" lean-forward="false" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
+            <state relative-caret-position="330">
+              <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1998#1999#0" expanded="true" />
-                <element signature="e#2029#2030#0" expanded="true" />
+                <element signature="e#2134#2135#0" expanded="true" />
+                <element signature="e#2165#2166#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -45,14 +43,16 @@
       <file leaf-file-name="DrawPanel.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/DrawPanel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-985">
-              <caret line="8" column="21" lean-forward="true" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
-              <folding />
+            <state relative-caret-position="185">
+              <caret line="23" column="12" lean-forward="true" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="12" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Shape.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Shape.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Shapes/Shape.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
@@ -356,8 +356,8 @@
           <caret line="20" column="32" lean-forward="false" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1998#1999#0" expanded="true" />
-            <element signature="e#2029#2030#0" expanded="true" />
+            <element signature="e#2134#2135#0" expanded="true" />
+            <element signature="e#2165#2166#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -366,7 +366,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="15" column="36" lean-forward="false" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -394,34 +396,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Draw.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DrawPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-985">
-          <caret line="8" column="21" lean-forward="true" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DrawFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="25" column="21" lean-forward="false" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1998#1999#0" expanded="true" />
-            <element signature="e#2029#2030#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Shapes/Shape.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -438,6 +412,36 @@
             <element signature="e#512#513#0" expanded="true" />
             <element signature="e#530#531#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DrawPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="23" column="12" lean-forward="true" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DrawFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2134#2135#0" expanded="true" />
+            <element signature="e#2165#2166#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Draw.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

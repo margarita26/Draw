@@ -23,7 +23,7 @@ public class DrawPanel extends JPanel implements ActionListener, MouseListener,
   public DrawPanel() {
     super();
     shapes = new ArrayList<>();
-    this.setPreferredSize(new Dimension(600, 600));
+    this.setPreferredSize(new Dimension(1000, 1000));
     this.setBackground(Color.WHITE);
     this.addMouseListener(this);
     this.addMouseMotionListener(this);
