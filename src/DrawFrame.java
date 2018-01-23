@@ -1,10 +1,12 @@
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.lang.reflect.Field;
 
 import javax.swing.*;
 
+/**
+ * Class represents the frame with two panels: one to draw on and one to change color/erase.
+ */
 public class DrawFrame extends JFrame implements ActionListener,IDraw {
 
   private JButton restart;
@@ -28,6 +30,9 @@ public class DrawFrame extends JFrame implements ActionListener,IDraw {
     pack();
   }
 
+  /**
+   * Create a button panel with the tools.
+   */
   private void setButtonPanel() {
     //make a panel
     buttonpanel = new JPanel();
@@ -49,7 +54,7 @@ public class DrawFrame extends JFrame implements ActionListener,IDraw {
       panel.restart();
     });
     buttonpanel.add(restart);
-    //restart.setAlignmentX(Component.CENTER_ALIGNMENT);
+
     //button to chose color of the drawing
     choose = new JButton("Choose Color:");
     choose.addActionListener((ActionEvent e) -> {
@@ -58,8 +63,8 @@ public class DrawFrame extends JFrame implements ActionListener,IDraw {
             }
     );
     buttonpanel.add(choose, left);
-    //choose.setAlignmentX(Component.CENTER_ALIGNMENT);
 
+    //field to chose color
     colors = new JTextField(5);
     buttonpanel.add(colors, right);
 

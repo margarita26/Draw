@@ -4,14 +4,15 @@ import java.awt.event.ActionListener;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.awt.event.MouseMotionListener;
-import java.lang.reflect.Field;
 import java.util.ArrayList;
 
 import javax.swing.*;
 
 import Shapes.Shape;
 
-
+/**
+ * Class represents the board to draw on.
+ */
 public class DrawPanel extends JPanel implements ActionListener, MouseListener,
         MouseMotionListener {
 
@@ -85,6 +86,7 @@ public class DrawPanel extends JPanel implements ActionListener, MouseListener,
     repaint();
   }
 
+  //changes color of the drawing shape.
   public void setColor(String s) {
     Color newC;
     try {
@@ -92,6 +94,6 @@ public class DrawPanel extends JPanel implements ActionListener, MouseListener,
     } catch (Exception e) {
       newC = null; // Not defined
     }
-    this.c = new Color(newC.getRGB());
+    this.c = newC;
   }
 }

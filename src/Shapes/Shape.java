@@ -2,6 +2,9 @@ package Shapes;
 
 import java.awt.*;
 
+/**
+ * Class represents the shape which holds the position of the click and its color.
+ */
 public class  Shape {
 
   private Point p;
