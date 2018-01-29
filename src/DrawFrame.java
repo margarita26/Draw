@@ -15,7 +15,7 @@ public class DrawFrame extends JFrame implements ActionListener,IDraw {
   private DrawPanel panel;
   private JPanel buttonpanel;
 
-  protected DrawFrame() {
+  DrawFrame() {
 
     this.setLayout(new BorderLayout());
     this.setTitle("Draw Panel");
@@ -29,7 +29,6 @@ public class DrawFrame extends JFrame implements ActionListener,IDraw {
     this.add(scrolling, BorderLayout.CENTER);
 
     this.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-
   }
 
   /**
@@ -39,6 +38,7 @@ public class DrawFrame extends JFrame implements ActionListener,IDraw {
     //make a panel
     buttonpanel = new JPanel();
     buttonpanel.setBorder(BorderFactory.createTitledBorder("Tools"));
+
     //set layout
     buttonpanel.setLayout(new GridBagLayout());
     GridBagConstraints left = new GridBagConstraints();
@@ -47,6 +47,7 @@ public class DrawFrame extends JFrame implements ActionListener,IDraw {
     right.weightx = 2.0;
     right.fill = GridBagConstraints.HORIZONTAL;
     right.gridwidth = GridBagConstraints.REMAINDER;
+
     //add button panel to the frame
     this.add(buttonpanel, BorderLayout.NORTH);
 
@@ -69,8 +70,6 @@ public class DrawFrame extends JFrame implements ActionListener,IDraw {
     //field to chose color
     colors = new JTextField(5);
     buttonpanel.add(colors, right);
-
-
   }
 
   @Override

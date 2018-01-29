@@ -15,14 +15,6 @@ public class  Shape {
     this.c = c;
   }
 
-  public void setPoint(Point newP) {
-    p = newP;
-  }
-
-  public void setColor(Color newC) {
-    c = newC;
-  }
-
   public double getPointX() {
     return p.getX();
   }
