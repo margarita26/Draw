@@ -17,7 +17,10 @@ public class DrawPanel extends JPanel implements ActionListener, MouseListener,
         MouseMotionListener {
 
   private Color c;
+  private int widthS;
+  private int heightS;
   private ArrayList<Shape> shapes;
+  private int valueInPanel;
 
 
   public DrawPanel() {
@@ -28,6 +31,7 @@ public class DrawPanel extends JPanel implements ActionListener, MouseListener,
     this.addMouseListener(this);
     this.addMouseMotionListener(this);
     this.c = Color.BLACK;
+    this.valueInPanel = 5;
   }
 
   @Override
@@ -36,8 +40,12 @@ public class DrawPanel extends JPanel implements ActionListener, MouseListener,
 
     for (Shape s : shapes) {
       g.setColor(s.getColor());
-      g.fillOval((int)s.getPointX(),(int)s.getPointY(),5,5);
+      g.fillOval((int)s.getPointX(),(int)s.getPointY(),s.getWidthS(),s.getHeightS());
     }
+  }
+
+  protected void changeS(int value) {
+    valueInPanel = value;
   }
 
   @Override
@@ -51,7 +59,7 @@ public class DrawPanel extends JPanel implements ActionListener, MouseListener,
 
   @Override
   public void mousePressed(MouseEvent e) {
-    shapes.add(new Shape(e.getPoint(),c));
+    shapes.add(new Shape(e.getPoint(),c, valueInPanel,valueInPanel));
     repaint();
   }
 
@@ -72,7 +80,7 @@ public class DrawPanel extends JPanel implements ActionListener, MouseListener,
 
   @Override
   public void mouseDragged(MouseEvent e) {
-    shapes.add(new Shape(e.getPoint(),c));
+    shapes.add(new Shape(e.getPoint(),c, valueInPanel,valueInPanel));
     repaint();
   }
 

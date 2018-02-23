@@ -9,10 +9,14 @@ public class  Shape {
 
   private Point p;
   private Color c;
+  private int widthS;
+  private int heightS;
 
-  public Shape(Point p, Color c) {
+  public Shape(Point p, Color c, int widthS, int heightS) {
     this.p = p;
     this.c = c;
+    this.widthS = widthS;
+    this.heightS = heightS;
   }
 
   public double getPointX() {
@@ -25,6 +29,19 @@ public class  Shape {
 
   public Color getColor() {
     return c;
+  }
+
+  public void setS(int value) {
+    this.widthS = value;
+    this.heightS = value;
+  }
+
+  public int getWidthS() {
+    return widthS;
+  }
+
+  public int getHeightS() {
+    return heightS;
   }
 
 }
